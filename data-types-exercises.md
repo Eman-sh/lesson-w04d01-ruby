@@ -9,29 +9,29 @@
 ```rb
 2 ** 3
 ```
-```text
-Your answer.
+``````2 *2 = 4 ,, 2*2 = 4 ,, 4+4 = 8
+Your answer = 8.
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
-```text
-Your answer.
+```(16 / 4) = 4 ,, (2 + 1) = 3,, 4*3 = 12,, 12 ** 2 = 144
+Your answer = 144.
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
-```text
-Your answer.
+``` prints the 2 words 3 times
+Your answer= a milli a milli a milli a milli a milli a milli
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
-```text
-Your answer.
+```prints the word 2 times only
+Your answer= a milli a milli
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+Your answer Error
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+Your answer = "13"
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +55,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[false] false
 [ ] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[false] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+Your answer = nil
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+Your answer = nil
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+Your answer Error
 ```
 
 ```rb
@@ -108,7 +108,7 @@ if age
 end
 ```
 ```text
-Your answer.
+Your answer = the users input
 ```
 
 ### Conditionals
@@ -136,7 +136,14 @@ Your output should look something like this...
   ```rb
   i = 1
   while i <= 100
-    # Your code goes in here.
+    if i % 3 && i % 5 = 0 
+        p "FizzBuzz"
+    elsif i% 3 =0
+        p " Fizz"
+    elsif i% 5 =0
+        p " Buzz"
+    else p " Number"
+    puts (1..100)
   end
   ```
 
